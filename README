@@ -1,0 +1,47 @@
+nadav366,ortal1602
+We talked about the exercise with Guy Katz, Yair Shemer, and Ortal Glatt.
+
+We built the software in this way:
+In the main function there is a loop to continue the program until
+the request to exit, and inside it another loop for the transition menu.
+
+From the main function, you can advance, at the user's choice,
+to three functions that perform different tasks.
+Each of them returns the sound to the transition menu.
+The transition menu accepts the user request, and routes it to
+whether to switch to the file change function or to the save function.
+
+Edit Sound File-
+Is built from a menu function that accepts the user's choice
+and routes it to the change that he wishes to perform.
+In addition, there is a function for each change option, except for
+amplification and descent, which are in the same function only with a
+parameter used to indicate whether to increase or decrease.
+
+Union Files-
+The operation consists of a main interface, which unifies two files of the
+same sample rate.
+In addition, from auxiliary functions -
+to receive files and check their integrity,
+and to edit the file with the rapid sampling rate, if necessary.
+
+composing melody-
+The operation consists of one function, which performs the composition and an
+auxiliary function for obtaining the instruction file
+and checking its correctness.
+
+General Reference Functions-
+* Function for receiving and checking the user's selection from the menu,
+    for all menus and selections in the software.
+* A function for averaging a list of bits.
+* A function to verify that a number is within the allowed range.
+* Function for receiving and opening a sound file from the user.
+* A function to save a sound file in a name obtained by the user.
+
+The software is organized so-
+- Constants, magic numbers and user notifications
+- auxiliary functions
+- file modification
+- file consolidation
+- composing
+- main function.
